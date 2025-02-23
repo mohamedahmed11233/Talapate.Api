@@ -1,0 +1,146 @@
+[
+    {
+        "Name": "Double Caramel Frappuccino",
+        "Discription": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+        "Price": 200,
+        "PictureUrl": "images/products/sb-ang1.png",
+        "CataegoryId": 1,
+        "BrandId": 1
+    },
+    {
+        "Name": "White Chocolate Mocha Frappuccino",
+        "Discription": "Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.",
+        "Price": 150,
+        "PictureUrl": "images/products/sb-ang2.png",
+        "CataegoryId": 1,
+        "BrandId": 1
+    },
+    {
+        "Name": "Iced Cafe Latte",
+        "Discription": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
+        "Price": 180,
+        "PictureUrl": "images/products/sb-core1.png",
+        "CataegoryId": 2,
+        "BrandId": 1
+    },
+    {
+        "Name": "White Chocolate Mocha",
+        "Discription": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
+        "Price": 300,
+        "PictureUrl": "images/products/sb-core2.png",
+        "CataegoryId": 3,
+        "BrandId": 2
+    },
+    {
+        "Name": "Iced Caramel Macchiato",
+        "Discription": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+        "Price": 250,
+        "PictureUrl": "images/products/sb-react1.png",
+        "CataegoryId": 4,
+        "BrandId": 1
+    },
+    {
+        "Name": "Hot Caramel Macchiato",
+        "Discription": "Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.",
+        "Price": 120,
+        "PictureUrl": "images/products/sb-ts1.png",
+        "CataegoryId": 4,
+        "BrandId": 5
+    },
+    {
+        "Name": "Iced Matcha Latte",
+        "Discription": "Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+        "Price": 10,
+        "PictureUrl": "images/products/hat-core1.png",
+        "CataegoryId": 5,
+        "BrandId": 2
+    },
+    {
+        "Name": "Honey Cake",
+        "Discription": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
+        "Price": 8,
+        "PictureUrl": "images/products/hat-react1.png",
+        "CataegoryId": 6,
+        "BrandId": 1
+    },
+    {
+        "Name": "Blueberry Cheesecake",
+        "Discription": "Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+        "Price": 15,
+        "PictureUrl": "images/products/hat-react2.png",
+        "CataegoryId": 6,
+        "BrandId": 1
+    },
+    {
+        "Name": "Glazed Donuts",
+        "Discription": "Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.",
+        "Price": 18,
+        "PictureUrl": "images/products/glove-code1.png",
+        "CataegoryId": 7,
+        "BrandId": 3
+    },
+    {
+        "Name": "Greek Salad",
+        "Discription": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
+        "Price": 15,
+        "PictureUrl": "images/products/glove-code2.png",
+        "CataegoryId": 7,
+        "BrandId": 1
+    },
+  {
+    "Name": "Iced Black Tea Lemonade",
+    "Discription": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa.",
+    "Price": 16,
+    "PictureUrl": "images/products/glove-react1.png",
+    "CataegoryId": 4,
+    "BrandId": 4
+  },
+    {
+        "Name": "Iced London Fog Tea Latte",
+        "Discription": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
+        "Price": 14,
+        "PictureUrl": "images/products/glove-react2.png",
+        "CataegoryId": 4,
+        "BrandId": 4
+    },
+    {
+        "Name": "Turkey Bacon, Cheddar & Egg White Sandwich",
+        "Discription": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
+        "Price": 250,
+        "PictureUrl": "images/products/boot-redis1.png",
+        "CataegoryId": 3,
+        "BrandId": 6
+    },
+    {
+        "Name": "Core Red Boots",
+        "Discription": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+        "Price": 189.99,
+        "PictureUrl": "images/products/boot-core2.png",
+        "CataegoryId": 3,
+        "BrandId": 2
+    },
+    {
+        "Name": "Double-Smoked Bacon, Cheddar & Egg Sandwich",
+        "Discription": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
+        "Price": 199.99,
+        "PictureUrl": "images/products/boot-core1.png",
+        "CataegoryId": 3,
+        "BrandId": 2
+    },
+    {
+        "Name": "Iced Chai Tea Latte with Oleato Golden Foam",
+        "Discription": "Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.",
+        "Price": 150,
+        "PictureUrl": "images/products/boot-ang2.png",
+        "CataegoryId": 3,
+        "BrandId": 1
+    },
+    {
+        "Name": "Dragon Drink® Starbucks Refreshers® Beverage with Oleato Golden Foam",
+        "Discription": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
+        "Price": 180,
+        "PictureUrl": "images/products/boot-ang1.png",
+        "CataegoryId": 3,
+        "BrandId": 1
+    }
+]

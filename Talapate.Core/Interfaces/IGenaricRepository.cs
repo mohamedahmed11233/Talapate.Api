@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Talapate.Core.Entities;
+using Talapate.Core.specification;
 
 namespace Talapate.Core.Interfaces
 {
@@ -12,6 +13,8 @@ namespace Talapate.Core.Interfaces
         Task<IEnumerable<T>> GetAllAsync();
 
         Task<T> GetByIdAsync(int id);
+        Task<IEnumerable<T>> GetAllWithSpecAsync(Ispecification<T> spec);
+        Task<T> GetByIdWithSpecAsync(Ispecification<T> spec);
 
     }
 }

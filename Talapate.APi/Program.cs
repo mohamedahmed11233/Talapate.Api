@@ -1,5 +1,7 @@
 
+using AutoMapper;
 using Microsoft.EntityFrameworkCore;
+using Talapate.APi.Helper;
 using Talapate.Core.Interfaces;
 using Talapate.Repository;
 using Talapate.Repository.Data;
@@ -27,10 +29,10 @@ namespace Talapate.APi
 
             builder.Services.AddScoped(typeof(IGenericRepository<>),typeof( GeneraicRepository<>));
 
-
+            builder.Services.AddAutoMapper(typeof(MappingProfiles));
+            //mapping profile ==> AutomMappper
 
             var app = builder.Build();
-
             using var scope = app.Services.CreateScope();
             var services = scope.ServiceProvider;
             var dbContext = services.GetRequiredService<StoreContext>();
@@ -59,7 +61,7 @@ namespace Talapate.APi
 
             app.UseAuthorization();
 
-
+            app.UseStaticFiles();
             app.MapControllers();
 
             app.Run();

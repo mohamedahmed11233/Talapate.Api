@@ -6,7 +6,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Talapate.Core.Entities;
 using Talapate.Core.Interfaces;
+using Talapate.Core.specification;
 using Talapate.Repository.Data.Context;
+using Talapate.Repository.Specification;
 
 namespace Talapate.Repository
 {
@@ -28,9 +30,24 @@ namespace Talapate.Repository
            return await context.Set<T>().ToListAsync();
         }
 
+
         public async Task<T> GetByIdAsync(int id)
         {
             return await context.Set<T>().FindAsync(id);   
+        }
+        public async Task<IEnumerable<T>> GetAllWithSpecAsync(Ispecification<T> spec)
+        {
+            return await ApllaySpecifiction(spec).ToListAsync();
+        }
+
+        public async Task<T> GetByIdWithSpecAsync(Ispecification<T> spec)
+        {
+            return await ApllaySpecifiction(spec).FirstOrDefaultAsync();
+        }
+
+        private IQueryable<T> ApllaySpecifiction(Ispecification<T> spec)
+        {
+            return SpecifictionEvalutor<T>.GetQuery(context.Set<T>(), spec);
         }
     }
 }

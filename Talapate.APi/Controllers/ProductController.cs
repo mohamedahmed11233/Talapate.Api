@@ -1,7 +1,10 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Talapate.APi.Dtos;
 using Talapate.Core.Entities;
 using Talapate.Core.Interfaces;
+using Talapate.Core.specification;
 
 namespace Talapate.APi.Controllers
 {
@@ -10,25 +13,31 @@ namespace Talapate.APi.Controllers
     public class ProductController : ControllerBase
     {
         private readonly IGenericRepository<Product> _productRepo;
+        private readonly IMapper _mapper;
 
-        public ProductController(IGenericRepository<Product> ProductRepo)
+        public ProductController(IGenericRepository<Product> ProductRepo ,IMapper mapper)
         {
             _productRepo = ProductRepo;
+            _mapper = mapper;
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Product>>> GetALL()
+        public async Task<ActionResult<IEnumerable<ProductDto>>> GetALL()
         {
-            var product = await _productRepo.GetAllAsync();
+            var spec = new ProductWithBrandAndTypeSpecifications();
+            var product = await _productRepo.GetAllWithSpecAsync(spec);
 
-            return Ok(product);
+
+            return Ok(_mapper.Map<IEnumerable <Product>, IEnumerable<ProductDto>>(product));
         }
         [HttpGet ("{id}")]
         public async Task<ActionResult<IEnumerable<Product>>> GetById(int id)
         {
-            var product = await _productRepo.GetByIdAsync(id);
+            var spec = new ProductWithBrandAndTypeSpecifications();
 
-            return Ok(product);
+            var product = await _productRepo.GetByIdWithSpecAsync(spec);
+
+            return Ok(_mapper.Map<Product,ProductDto>( product)); 
         }
     }
 }

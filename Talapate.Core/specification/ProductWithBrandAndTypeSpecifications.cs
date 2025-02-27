@@ -12,11 +12,11 @@ namespace Talapate.Core.specification
 
         public ProductWithBrandAndTypeSpecifications() : base()
         {
-            Includes.Add(p => p.Brand);
+            Includes.Add(p => p.Brand); 
             Includes.Add(p => p.Cataegory);
         }
 
-        public ProductWithBrandAndTypeSpecifications(int id)
+        public ProductWithBrandAndTypeSpecifications(int id):base(p => p.Id == id) 
         {
 
             Includes.Add(p => p.Brand);
